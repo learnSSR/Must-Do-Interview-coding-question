@@ -14,13 +14,13 @@
 - [Heap](#heap)
 - [Two Pointers](#two-pointers)
 
-##Arrays
+## Arrays
 
 1  Minimum Size Subarray Sum | leetode 209 | [solution](#Q1)
 
-#Solution
+# Solution
 
-##Q1
+## Q1
 
 ```
 int minSubArrayLen(int target, vector<int>& nums) {
