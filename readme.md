@@ -18,11 +18,31 @@
 
 1  Minimum Size Subarray Sum | leetode 209 | [solution](#Q1)
 
-##Solution
+#Solution
+
 ##Q1
 
-``cpp
-// code example here
+```
+int minSubArrayLen(int target, vector<int>& nums) {
+    int left = 0, right = 0;
+    int sum = 0;
+    int minLen = INT_MAX;
+    int n = nums.size();
+
+    while (right < n) {
+        sum += nums[right];
+        right++;
+
+        while (sum >= target) {          // shrink window from left
+            minLen = min(minLen, right - left);
+            sum -= nums[left];
+            left++;
+        }
+    }
+
+    return minLen == INT_MAX ? 0 : minLen;
+}
+
 int main() {
     cout << "Hello World" << endl;
     return 0;
