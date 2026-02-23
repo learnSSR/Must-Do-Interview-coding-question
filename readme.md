@@ -16,5 +16,15 @@
 
 ##Arrays
 
-1  Minimum Size Subarray Sum
+1  Minimum Size Subarray Sum | leetode 209 | [solution](#Q1)
 
+##Solution
+##Q1
+
+``cpp
+// code example here
+int main() {
+    cout << "Hello World" << endl;
+    return 0;
+}
+```
